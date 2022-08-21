@@ -74,6 +74,8 @@ app.post("/api/notes", (request, response) => {
     id: generateId(),
   };
 
+  notes = [...notes, note];
+
   response.json(note);
 });
 
